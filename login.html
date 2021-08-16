@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShowTrackr</title>
+  <link rel="shortcut icon" href="favicon.png">
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  
+  <!-- Font Awesome-->
+  <script src="https://kit.fontawesome.com/cb0ce0af44.js" crossorigin="anonymous"></script>
+  
+  <script src="jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+ 
+ 
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        Show<strong>Trackr</strong>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="add.html">Add</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="center-form panel" id="login_form">
+      <div class="panel-body">
+        <h2 class="text-center"><strong>Log In</strong></h2>
+
+        <form name="loginForm">
+            
+          <div class="form-group">
+            <div  class="form-control input-lg" >
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-at" viewBox="0 0 16 16">
+                <path d="M13.106 7.222c0-2.967-2.249-5.032-5.482-5.032-3.35 0-5.646 2.318-5.646 5.702 0 3.493 2.235 5.708 5.762 5.708.862 0 1.689-.123 2.304-.335v-.862c-.43.199-1.354.328-2.29.328-2.926 0-4.813-1.88-4.813-4.798 0-2.844 1.921-4.881 4.594-4.881 2.735 0 4.608 1.688 4.608 4.156 0 1.682-.554 2.769-1.416 2.769-.492 0-.772-.28-.772-.76V5.206H8.923v.834h-.11c-.266-.595-.881-.964-1.6-.964-1.4 0-2.378 1.162-2.378 2.823 0 1.737.957 2.906 2.379 2.906.8 0 1.415-.39 1.709-1.087h.11c.081.67.703 1.148 1.503 1.148 1.572 0 2.57-1.415 2.57-3.643zm-7.177.704c0-1.197.54-1.907 1.456-1.907.93 0 1.524.738 1.524 1.907S8.308 9.84 7.371 9.84c-.895 0-1.442-.725-1.442-1.914z"/>
+              </svg>
+              <!-- <div class="input-group-text">@</div> -->
+            <input type="gmail" placeholder="Email" id="mail" required autofocus>
+            </div>
+            <div class="text-danger">
+              <div id="email-required">Your email address is required.</div>
+              <div id="invalid-email">Your email address is invalid.</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+          <div  class="form-control input-lg" >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-key" viewBox="0 0 16 16">
+              <path d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z"/>
+              <path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+            </svg>
+          <input type="password" placeholder="Password" id="password" required autofocus>
+        </div>
+        <div class="text-danger">
+          <div id="pw-required">Password is required.</div>
+          <div id="invalid-pw">Invalid Password.</div>
+        </div>
+      </div>
+
+          <button  class="btn btn-lg btn-block btn-success" id="submit_btn"> Log In </button>
+
+          <br><br>
+          <div class="text-center"><strong>Forgot your password?</strong></div>
+          <div class="text-center text-muted" >Dont have an account yet?
+           <a href="signup.html">Sign up</a></div><br>
+
+           <div class="hr">
+            <h5>
+                or
+            </h5>
+          </div>
+          <br>
+           
+            <button  class="btn form-control btn-primary submit px-3" ><i class="fa fa-facebook"></i> Sign in with Facebook</button> <br><br>
+            <button  class="btn form-control btn-primary submit px-3" style="background: red !important;"><i class="fa fa-google"></i> Sign in with Google</button> <br><br>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="form-validation.js"></script>
+<script>
+
+  $("document").ready(function() {
+  var users=[
+    {
+      "email":"sample1@email.com",
+      "password":"Sample@1111"
+    },
+  
+    {
+      "email":"sample2@email.com",
+      "password":"Sample@2222"
+    },
+  
+    {
+      "email":"sample3@email.com",
+      "password":"Sample@3333"
+    },
+    {
+      "email":"sample4@email.com",
+      "password":"Sample@4444"
+    },
+    {
+      "email":"sample5@email.com",
+      "password":"Sample@5555"
+    }
+  ];
+  
+    $("#submit_btn").click(function(e) {
+      e.preventDefault();
+      var user_email = document.getElementById("mail").value;
+      var user_password = document.getElementById("password").value;
+
+   for(var i = 0; i < users.length; i++){
+     
+      if(users[i]["email"] === user_email && users[i]["password"] === user_password ){
+       location.href = "index.html";
+       break;
+      }else{
+       alert("invalid email or password");
+       break;
+      }
+   }
+  });
+}); 
+  </script>
+
+</body>
+</html>
+

@@ -1,0 +1,204 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShowTrackr</title>
+  <link rel="short icon" href="favicon.png">
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  
+<!--JQuerry CDN-->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+  <!-- Navbar -->
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        Show<strong>Trackr</strong>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="add.html">Add</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </div>
+  <!-- Navbar End-->
+
+    <!-- Alphabet order Start -->
+  <div class="jumbotron text-center">
+    <div class="container">
+      <ul class="alphabet">
+          <li class = "index">0-9</li>
+          <li class = "index">A</li>
+          <li class = "index">B</li>
+          <li class = "index">C</li>
+          <li class = "index">D</li>
+          <li class = "index">E</li>
+          <li class = "index">F</li>
+          <li class = "index">G</li>
+          <li class = "index">H</li>
+          <li class = "index">I</li>
+          <li class = "index">J</li>
+          <li class = "index">K</li>
+          <li class = "index">L</li>
+          <li class = "index">M</li>
+          <li class = "index">N</li>
+          <li class = "index">O</li>
+          <li class = "index">P</li>
+          <li class = "index">Q</li>
+          <li class = "index">R</li>
+          <li class = "index">S</li>
+          <li class = "index">T</li>
+          <li class = "index">U</li>
+          <li class = "index">V</li>
+          <li class = "index">W</li>
+          <li class = "index">X</li>
+          <li class = "index">Y</li>
+          <li class = "index">Z</li>
+      </ul>
+      <br>
+      <ul class="genres">
+        <kbd class = "genres-button">Action</kbd>
+        <kbd class = "genres-button">Arcade</kbd>
+        <kbd class = "genres-button">Fantasy</kbd>
+        <kbd class = "genres-button">Romance</kbd>
+        <kbd class = "genres-button">Robbery</kbd>
+        <kbd class = "genres-button">Sci-Fic</kbd>
+        <kbd class = "genres-button">Thriller</kbd>
+        <kbd class = "genres-button">Mystery</kbd>
+      </ul>
+    </div>
+  </div>
+
+   <!-- Alphabet order End -->
+
+   <!--Film Cards-->
+
+   <div class="container">
+    <div class="panel panel-default"> 
+      <div class="panel-heading">TOP 12 SHOWS <input type="text" placeholder="Search.." style="float:right; outline:none;"></div>
+       <div class="panel-body" id="myDiv">
+         <div id ="show"></div>
+         <!-- <div id="all"> -->
+         <!-- <div class="col-sm-3">
+          <figure class="figure">
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="img/GOT.jpeg"></a><h4 class="film text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          </figure>
+        </div>
+         <div class="col-sm-3">
+          <figure class="figure"> 
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="breaking_bad.jpg"></a><h4 class="film text-center"><strong>Breaking Bad</strong></h4><figcaption class="figure-caption text-center">Episode: 79</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          </figure>
+        </div>
+         <div class="col-sm-3">
+          <figure class="figure">
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="dexter.jpg"></a><h4 class="film text-center"><strong>Dexter</strong></h4><figcaption class="figure-caption text-center">Episode: 125</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          </figure>
+         </div>
+         <div class="col-sm-3">
+          <figure class="figure">
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="himym.jpeg"></a><h4 class="film text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 219</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="beast.jpeg"></a><h4 class="text-center"><strong>Game of Thrones</strong></h4><figcaption class="figure-caption text-center">Episode: 84</figcaption><br><br>
+          </figure> -->
+        <!-- </div> -->
+         </div>
+       </div> 
+      </div>
+   </div>
+     
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script>
+   $(document).ready(function(){
+
+    $(document).ready(function(e){
+      $.ajax({
+        url: "films.json",
+        dataType:"json",
+        success: function (showFilms){
+          var data2 = "";
+          for( var i=0; i<showFilms.length; i++){
+              data2 +=' <div class="col-sm-3"><figure class="figure">\
+                       <a href="'+ showFilms[i]["url"] +'"><img class="figure-img img-thumbnail rounded img-rounded" src="'+showFilms[i]["image_url"]+'"></a>\
+                       <h4 class="film text-center"><strong>'+showFilms[i]["name"]+'</strong></h4>\
+                       <figcaption class="figure-caption text-center">'+showFilms[i]["episode"]+'</figcaption><br><br> </figure></div>'
+            }
+          document.getElementById("show").innerHTML = data2;
+        }
+      });
+    });
+
+    $(".index").click(function(e){
+      $("#all").hide();
+      var index_value =$(this).html();
+
+      $.ajax({
+        url: "films.json",
+        dataType:"json",
+        success: function (sortByName){
+          var data = "";
+          for( var i=0; i<sortByName.length; i++){
+            if(sortByName[i]["name"][0] === index_value){
+              data +=' <div class="col-sm-3"><figure class="figure">\
+                       <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="'+sortByName[i]["image_url"]+'"></a>\
+                       <h4 class="film text-center"><strong>'+sortByName[i]["name"]+'</strong></h4>\
+                       <figcaption class="figure-caption text-center">'+sortByName[i]["episode"]+'</figcaption><br><br> </figure></div>'
+            }
+          }
+          document.getElementById("show").innerHTML = data;
+        }
+      });
+    });
+
+    $(".genres-button").click(function(e){
+      $("#all").hide();
+      var genre_value = $(this).html();
+
+      $.ajax({
+        url: "films.json",
+        dataType:"json",
+        success: function (sortByGenre){
+          var data2 = "";
+          for( var i=0; i<sortByGenre.length; i++){
+            if(sortByGenre[i]["genre"] === genre_value){
+              data2 +=' <div class="col-sm-3"><figure class="figure">\
+                       <a href=""><img class="figure-img img-thumbnail rounded img-rounded" src="'+sortByGenre[i]["image_url"]+'"></a>\
+                       <h4 class="film text-center"><strong>'+sortByGenre[i]["name"]+'</strong></h4>\
+                       <figcaption class="figure-caption text-center">'+sortByGenre[i]["episode"]+'</figcaption><br><br> </figure>'
+            }
+          }
+          document.getElementById("show").innerHTML = data2;
+        }
+      });
+    });
+
+
+
+
+   });
+   </script>
+</body>
+</html>

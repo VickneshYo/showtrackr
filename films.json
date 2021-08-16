@@ -1,0 +1,87 @@
+[
+    {
+        "name"      : "Game of Thrones",
+        "genre"     : "Action",
+        "episode"   : "Episode:84",
+        "image_url" : "img/GOT.jpeg",
+        "url"       : "gameofthrones.html"
+    },
+    {
+        "name"      : "Breaking Bad",
+        "genre"     : "Action",
+        "episode"   : "Episode:79",
+        "image_url" : "img/breaking_bad.jpg",
+        "url"       : "breakingbad.html"
+    },
+    {
+        "name"      : "Dexter",
+        "genre"     : "Thriller",
+        "episode"   : "Episode:125",
+        "image_url" : "img/dexter.jpg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "How i Met Your Mother",
+        "genre"     : "Romance",
+        "episode"   : "Episode:219",
+        "image_url" : "img/himym.jpeg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Resident Evil",
+        "genre"     : "Action",
+        "episode"   : "Episode:129",
+        "image_url" : "img/residentevil.jpeg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Aladin",
+        "genre"     : "Mystery",
+        "episode"   : "Episode:112",
+        "image_url" : "img/aladin.png",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Catwoman",
+        "genre"     : "Action",
+        "episode"   : "Episode:288",
+        "image_url" : "img/catwoman.jpeg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Fast and Furious",
+        "genre"     : "Arcade",
+        "episode"   : "Episode:121",
+        "image_url" : "img/fastandfurious.jpeg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Inception",
+        "genre"     : "Sci-Fic",
+        "episode"   : "Episode:239",
+        "image_url" : "img/inception.jpg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Money Heist",
+        "genre"     : "Robbery",
+        "episode"   : "Episode:322",
+        "image_url" : "img/moneyheist.jpg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "P.S.I Love You",
+        "genre"     : "Romance",
+        "episode"   : "Episode:235",
+        "image_url" : "img/psiloveyou.jpg",
+        "url"       : "index.html"
+    },
+    {
+        "name"      : "Resident Evil",
+        "genre"     : "Fantasy",
+        "episode"   : "Episode:187",
+        "image_url" : "img/wonderwoman.jpeg",
+        "url"       : "index.html"
+    }
+    
+]

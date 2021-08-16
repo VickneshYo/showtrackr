@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShowTrackr</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+
+<script src="jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <div class="navbar navbar-default navbar-static-top">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        Show<strong>Trackr</strong>
+      </a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="add.html">Add</a></li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li><a href="login.html">Login</a></li>
+      <li><a href="signup.html">Sign up</a></li>
+    </ul>
+  </div>
+
+
+<div class="container">
+  <div class="panel panel-default">
+    <div class="panel-heading">Add TV Show</div>
+    <div class="panel-body">
+      <h4><strong>Name</strong></h4>
+
+          <input type="text" class="form-control" placeholder="Enter TV show name" id ="showName" value="" required autofocus>
+            <!-- <div class="text-danger" id ="err">Invalid Show Name</div><br> -->
+            <di id="added"></di><br><BR>
+            <button class="btn btn-primary" id="add">Add</button>
+          </div>
+        </div>
+        
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).ready(function(){
+
+    $("#add").on("click", function(){
+
+      var sName = $("#showName").val();
+      // console.log(sName);
+      var snFormat =/^(?![0-9._])(?!.*[0-9._]$)(?!.*\d_)(?!.*_\d)[a-zA-Z0-9_]+$/;
+        if(snFormat.test(sName)){
+          $("#added").html(sName + " has been added successfully!").removeClass("text-danger").addClass("text-success");
+        }else{
+          $("#added").html("Inavlid Name!").removeClass("text-success").addClass("text-danger");
+         
+        }
+    });
+});
+</script>
+
+</body>
+</html>
